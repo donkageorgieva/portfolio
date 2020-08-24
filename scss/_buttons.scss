@@ -1,0 +1,49 @@
+%btn {
+  display: inline-block;
+  border-radius: 8px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+
+  margin: 5px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.btn-view {
+  @extend %btn;
+  border: 1px solid $secondary-color;
+  padding: 5px 15px;
+  color: set-text-color($light-color);
+  &:hover {
+    @include set-background($secondary-color);
+  }
+}
+.btn-code {
+  @extend %btn;
+  background-color: none;
+  border: 1px solid $text-color;
+  padding: 5px 15px;
+  color: set-text-color($light-color);
+  &:hover {
+    @include set-background($text-color);
+  }
+}
+.workBtn {
+  @extend %btn;
+  padding: 10px 20px;
+  border: 1px solid $secondary-color;
+  background-color: none;
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+.project-buttons {
+  display: flex;
+  justify-content: center;
+}

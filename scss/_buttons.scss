@@ -1,5 +1,5 @@
 %btn {
-  display: inline-block;
+  // display: inline-block;
   border-radius: 8px;
   border: none;
   font-family: "Roboto", sans-serif;
@@ -19,8 +19,13 @@
   @extend %btn;
   border: 1px solid $secondary-color;
   padding: 5px 15px;
-  color: set-text-color($light-color);
+  a {
+    color: $text-color;
+  }
   &:hover {
+    a {
+      color: #ffffff;
+    }
     @include set-background($secondary-color);
   }
 }
@@ -43,4 +48,3 @@
     background-color: $secondary-color;
   }
 }
-

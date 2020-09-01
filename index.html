@@ -15,7 +15,8 @@
 
   <body>
     
-    <header class="showcase">
+    <section class="showcase">
+      <header>
       <div class="hamMenu">
       <h1 class="logo">
         DG
@@ -62,25 +63,28 @@
             </button>
           </div>
         </div>
+      </header>
 
         <div class="container">
           <h1 class="myProjects">My projects</h1>
           <div class="projects" id = 'projects'>
             <div class="project1 my-4">
-               <img src="rest.jpeg" alt="" class='my-3'/>
+              <a href="https://donkageorgieva.github.io/Wine-Shop-Project/"><img src="images/mockupDesktop.png" alt="" class='my-3'/></a>
               <h2>About</h2>
               <p class='m-1'>
                 A responsive wine shop website with a custom shopping cart <br>It was built with HTML, CSS,  SASS and JAVASCRIPT.
               </p>
               <div class='project-buttons'>
-                
-                  <button class="btn btn-view my-2" type ='submit'><a src="https://donydemony.github.io/Wine-Shop-Project/">View</a></button>
+                <form action="https://donkageorgieva.github.io/Wine-Shop-Project/">
+                  <button class="btn btn-view my-2" type ='submit'>View</button>
+                </form>
+                  
                  
                 
                 
-                <form action="https://github.com/donydemony/Wine-Shop-Project.git">
-                  <button class="btn btn-code my-2" type ='submit'>Code</button>
-                </form>
+            <form action="https://github.com/donkageorgieva/Wine-Shop-Project"> <button class="btn btn-code my-2" type ='submit'>Code</button></form>
+                  
+               
               </div>
            
 
@@ -98,13 +102,16 @@
             </div>
 
             <div class="project3 my-4">
-              <img src="rest.jpeg" alt="" class='my-3'/>
+              <a href="https://donkageorgieva.github.io/Restaurant-/"><img src="rest.jpeg" alt="" class='my-3'/></a>
               <h2>About</h2>
               <p class='m-1'>
                 Responsive landing page for a restaurant. <br>It was built with HTML, CSS,  SASS and JAVASCRIPT.
               </p>
-              <button class="btn btn-view my-2">View</button>
-              <button class="btn btn-code my-2">Code</button>
+              <div class="project-buttons">
+                <form action="https://donkageorgieva.github.io/Restaurant-/"><button class="btn btn-view my-2">View</button></form>
+                <form action="https://github.com/donkageorgieva/Restaurant-"><button class="btn btn-code my-2">Code</button></form>
+              </div>
+            
             </div>
           </div>
         </div>
@@ -135,9 +142,15 @@
       <i class="fab fa-css3-alt"></i>
       <p>Sass</p>
     </div>
- 
+    <div class="skill">
+      <i class="fab fa-js-square"></i>
+      <p>Javascript</p>
+    </div>
   </div>
-  
+  <!-- <div class="column">
+   
+    </div>
+  </div> -->
 
 </div>
 
@@ -146,18 +159,12 @@
 <h1>Learning</h1>
 <div class="row">
   <div class="column">
+   
     <div class="skill">
-      <i class="fab fa-js-square"></i>
-      <p>Javascript</p>
-    </div>
-    <!-- <div class="skill">
       <i class="fab fa-react"></i>
       <p>React</p>
     </div>
-    <div class="skill">
-      <i class="fab fa-wordpress"></i>
-      <p>Wordpress</p>
-    </div> -->
+ 
   </div>
   <!-- <div class="column">
     <div class="skill">
@@ -192,7 +199,7 @@
  
  
 </footer>
-      </header>
+</section>
     
        
     

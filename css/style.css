@@ -330,6 +330,21 @@ a {
 .showcase .homeSection p {
   font-size: 16px;
 }
+.showcase .project {
+  width: 300px;
+  max-width: 100%;
+  margin: 60px;
+  padding: 0 20px 80px 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  filter: drop-shadow(0px 0px 20px #e3e3e3);
+}
+.showcase .title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
 .showcase .projects {
   display: flex;
   align-items: center;
@@ -361,58 +376,14 @@ a {
 .showcase .projects p {
   font-size: 15px;
 }
-.showcase .projects .project1 {
-  height: 100%;
-  max-width: 100%;
-  width: 360px;
-  margin: 60px;
-  padding: 0 20px 50px 20px;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  filter: drop-shadow(0px 0px 20px #e3e3e3);
-}
-.showcase .projects .project2 {
-  height: 100%;
-  max-width: 100%;
-  width: 360px;
-  margin: 60px;
-  padding: 0 20px 50px 20px;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  filter: drop-shadow(0px 0px 20px #e3e3e3);
-}
-.showcase .projects .project3 {
-  max-width: 100%;
-  height: 100%;
-  width: 360px;
-  margin: 60px;
-  background-color: #f4f4f4;
-  padding: 0 20px 50px 20px;
-  border-radius: 8px;
-  filter: drop-shadow(0px 0px 20px #e3e3e3);
-}
-.showcase .myProjects {
-  text-align: center;
-  font-size: 50px;
-  font-weight: 700;
-  margin-bottom: 50px;
+.showcase #skills {
+  padding: 150px 0px 0px;
 }
 .showcase .skills {
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
   text-align: center;
-}
-.showcase .skills .mySkills {
-  max-width: 100%;
-  width: 300px;
-  height: 600px;
-  margin-top: 100px;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  height: 450px;
-  padding-bottom: 55px;
-  filter: drop-shadow(0px 0px 20px #e3e3e3);
 }
 .showcase .skills .mySkills h1 {
   margin-top: 50px;
@@ -424,16 +395,6 @@ a {
   font-size: 16px;
   font-weight: 700;
 }
-.showcase .skills .inProgress {
-  max-width: 100%;
-  width: 300px;
-  margin-top: 100px;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  height: 450px;
-  padding-bottom: 55px;
-  filter: drop-shadow(0px 0px 20px #e3e3e3);
-}
 .showcase .skills .inProgress h1 {
   margin-top: 50px;
   font-size: 25px;
@@ -443,11 +404,6 @@ a {
 .showcase .skills .inProgress p {
   font-size: 16px;
   font-weight: 700;
-}
-.showcase .title {
-  margin-top: 200px;
-  font-size: 50px;
-  text-align: center;
 }
 
 footer {
@@ -471,6 +427,10 @@ footer p {
 }
 
 @media (max-width: 700px) {
+  .title {
+    font-size: 40px;
+  }
+
   .homeSection {
     height: 400px;
   }
@@ -489,34 +449,18 @@ footer p {
   .showcase nav {
     display: none;
   }
+  .showcase .project {
+    max-width: 100%;
+    height: 350px;
+    margin: 50px;
+  }
+  .showcase .project h2 {
+    padding-top: 50px;
+  }
   .showcase .projects {
     flex-flow: column;
     text-align: center;
     justify-content: center;
-  }
-  .showcase .projects .project1 {
-    max-width: 100%;
-    height: 300px;
-    margin: 50px;
-  }
-  .showcase .projects .project1 h2 {
-    padding-top: 50px;
-  }
-  .showcase .projects .project2 {
-    max-width: 100%;
-    height: 300px;
-    margin: 50px;
-  }
-  .showcase .projects .project2 h2 {
-    padding-top: 50px;
-  }
-  .showcase .projects .project3 {
-    max-width: 100%;
-    height: 300px;
-    margin: 50px;
-  }
-  .showcase .projects .project3 h2 {
-    padding-top: 50px;
   }
   .showcase .projects img {
     display: none;
@@ -538,6 +482,13 @@ footer p {
   }
   .showcase .skills .inProgress h1 {
     font-size: 20px;
+  }
+  .showcase .fab {
+    font-size: 30px;
+    color: #7392b7;
+  }
+  .showcase .row {
+    margin-top: 0;
   }
 
   .hamMenu {

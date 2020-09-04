@@ -4,36 +4,15 @@ let nav = document.querySelector("nav");
 let bar1 = document.querySelector(".bar1");
 let bar2 = document.querySelector(".bar2");
 let bar3 = document.querySelector(".bar3");
-let menuShow = false;
+
 const menuFunction = () => {
-  let linkClicked = false;
-  if (!menuShow) {
-    menuItems.classList.add("close");
-    menuItems.classList.add("active");
-    bar1.classList.add("activeBar1");
-    bar2.classList.add("activeBar2");
-    bar3.classList.add("activeBar3");
-    bar1.style.backgroundColor = "white";
-    bar2.style.backgroundColor = "white";
-    bar3.style.backgroundColor = "white";
-
-    menuShow = true;
-  } else {
-    menuItems.classList.add("close");
-    menuItems.classList.remove("active");
-    bar1.classList.add("closeBars");
-    bar2.classList.add("closeBars");
-    bar3.classList.add("closeBars");
-    bar1.classList.remove("activeBar1");
-    bar2.classList.remove("activeBar2");
-    bar3.classList.remove("activeBar3");
-    bar1.style.backgroundColor = "#7392b7";
-    bar2.style.backgroundColor = "#7392b7";
-    bar3.style.backgroundColor = "#7392b7";
-
-    menuShow = false;
-  }
+  menuItems.classList.toggle("close");
+  menuItems.classList.toggle("active");
+  bar1.classList.toggle("activeBar1");
+  bar2.classList.toggle("activeBar2");
+  bar3.classList.toggle("activeBar3");
 };
+
 let sticky = nav.offsetTop;
 const stickyNav = () => {
   if (window.pageYOffset > sticky) {
@@ -42,6 +21,26 @@ const stickyNav = () => {
     nav.classList.remove("sticky");
   }
 };
+$(document).ready(function () {
+  $(".workBtn").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $("#projects").offset().top,
+      },
+      850
+    );
+  });
+  $(".linkNav").click(function (e) {
+    let linkHref = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(linkHref).offset().top,
+      },
+      850
+    );
+    e.preventDefault();
+  });
+});
 
 window.addEventListener("scroll", stickyNav);
 hamburgerIcon.addEventListener("click", menuFunction);

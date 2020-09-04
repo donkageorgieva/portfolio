@@ -175,6 +175,7 @@ a {
   top: 0;
   background-color: #223843;
   z-index: 1;
+  transition: 0.6s ease-in-out;
 }
 .hamMenu .menuItems a {
   color: #223843;
@@ -215,6 +216,7 @@ a {
   background-color: #7392b7;
   margin: 4px;
   border-radius: 8px;
+  transition: 0.6s ease-in-out;
 }
 
 .showcase {
@@ -226,22 +228,22 @@ a {
   transition: 0.5s ease-in-out;
   opacity: 0%;
 }
-.showcase .closeBars {
-  transition: 0.6s ease-in-out;
-}
 .showcase .activeBar1 {
   transform: translateY(16px) rotate(45deg);
   transition: 0.5s ease-in-out;
   border-radius: 20px;
+  background-color: #ffffff !important;
 }
 .showcase .activeBar2 {
   display: none;
   transition: 0.5s ease-in-out;
+  background-color: #ffffff !important;
 }
 .showcase .activeBar3 {
   transform: translateY(8px) rotate(-45deg);
   transition: 0.5s ease-in-out;
   border-radius: 20px;
+  background-color: #ffffff !important;
 }
 .showcase .active {
   opacity: 100%;
@@ -376,9 +378,6 @@ a {
 .showcase .projects p {
   font-size: 15px;
 }
-.showcase #skills {
-  padding: 150px 0px 0px;
-}
 .showcase .skills {
   display: flex;
   flex-flow: row;
@@ -424,6 +423,7 @@ footer p {
 
 #skills {
   padding-bottom: 100px;
+  padding-top: 180px;
 }
 
 @media (max-width: 700px) {

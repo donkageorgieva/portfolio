@@ -231,7 +231,7 @@ a {
    text-align: center;
     justify-content: center;
     flex-flow: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
 
     .project-buttons {
       display: flex;

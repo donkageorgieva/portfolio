@@ -19,13 +19,14 @@
   }
 
   .showcase {
+    margin: 0 auto;
     nav {
       display: none;
     }
     .project {
       max-width: 100%;
-      height: 350px;
-      margin: 50px;
+     
+      margin: 25px auto;
       h2 {
         padding-top: 50px;
       }
@@ -34,7 +35,8 @@
       flex-flow: column;
       text-align: center;
       justify-content: center;
-
+      flex-wrap: nowrap;
+      
       img {
         display: none;
         border-radius: 8px;
